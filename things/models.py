@@ -2,6 +2,6 @@ from django.db import models
 
 # Create your models here.
 class Thing(models.Model):
-    self.name = models.CharField()
-    self.description = models.TextField()
-    self.quantity = models.IntegerField()
+    name = models.CharField(max_length=50)
+    description = models.TextField()
+    quantity = models.IntegerField()
