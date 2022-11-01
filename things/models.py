@@ -6,5 +6,5 @@ from django.core.validators import MaxValueValidator
 # Create your models here.
 class Thing(models.Model):
     name = models.CharField(max_length=30)#max_length=30, unique=True, validators=[RegexValidator(regex=r'^.+$')])
-    description = models.TextField()#max_length=120, unique=False)
+    description = models.CharField(max_length=120)#max_length=120, unique=False)
     quantity = models.IntegerField()#validators=[MinValueValidator(limit_value=0), MaxValueValidator(limit_value=100)])
